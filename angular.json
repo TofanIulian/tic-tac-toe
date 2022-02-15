@@ -103,6 +103,16 @@
             "styles": ["src/styles.scss"],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "tic-tac-toe:build:production",
+            "firebaseProject": "tic-tac-toe-626d2",
+            "firebaseHostingSite": "tic-tac-toe-tf10"
+          }
         }
       }
     }
